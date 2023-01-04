@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import React from "react";
-import MyImg from "../images/Subject.png";
-import Star from "../images/Star.png";
+import MyImg from "../images/subject.png";
+import Star from "../images/star.png";
 import { Fade } from "./StyledCommon";
 
 interface StarPosition {
