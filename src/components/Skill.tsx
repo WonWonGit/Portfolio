@@ -45,7 +45,7 @@ const ImgDiv = styled.div`
   align-items: center;
 `;
 
-const Skills = () => {
+const Skill = () => {
   return (
     <SkillWrap>
       <SkillTitle>Skills</SkillTitle>
@@ -58,4 +58,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default Skill;
