@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { StarDivLeft, StarDivRight, StyledBannerTitle } from "./StyledCommon";
-import Star from "../images/Star.png";
+import Star from "../images/star.png";
 
 const ProjectWrap = styled.div`
   width: 80%;
