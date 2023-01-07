@@ -7,6 +7,7 @@ import Banner from "../components/Banner";
 import Intro from "../components/Intro";
 import Project from "../components/Project";
 import Skill from "../components/Skill";
+import AboutMe from "../components/AboutMe";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -16,6 +17,7 @@ const IndexPage: React.FC<PageProps> = () => {
         <Banner />
         <Intro />
         <Skill />
+        <AboutMe />
         <Project />
       </Layout>
     </>

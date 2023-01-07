@@ -1,23 +1,22 @@
 import React from "react";
 import styled from "styled-components";
-import { StarDivLeft, StarDivRight, StyledBannerTitle } from "./StyledCommon";
-import Star from "src/images/star.png";
+import SubBanner from "./SubBanner";
 
 const ProjectWrap = styled.div`
   width: 80%;
   margin: 100px auto;
 `;
 
-const ProjectBanner = styled.div`
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  background-color: ${(props) => props.theme.colors?.pointColor};
-  font-size: 6rem;
-  font-family: "Barbra";
-  color: whitesmoke;
-  padding: 100px 0;
-`;
+// const ProjectBanner = styled.div`
+//   display: flex;
+//   justify-content: center;
+//   width: 100%;
+//   background-color: ${(props) => props.theme.colors?.pointColor};
+//   font-size: 6rem;
+//   font-family: "Barbra";
+//   color: whitesmoke;
+//   padding: 100px 0;
+// `;
 
 const ProjectSubTitle = styled.div`
   color: #ff7400;
@@ -51,13 +50,7 @@ const ProjectBody = styled.div`
 const Project = () => {
   return (
     <>
-      <ProjectBanner>
-        <StyledBannerTitle>
-          <StarDivLeft src={Star} />
-          <div className="project">PROJECT</div>
-          <StarDivRight src={Star} />
-        </StyledBannerTitle>
-      </ProjectBanner>
+      <SubBanner title="PROJECT" />
       <ProjectWrap>
         <ProjectSubTitle>Project</ProjectSubTitle>
         <ProjectBody>

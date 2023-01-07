@@ -13,11 +13,11 @@ export const StyledBannerTitle = styled.div`
   .main {
     color: ${(props) => props.theme.colors?.pointColor};
   }
-  .project {
+  .subTitle {
     color: whitesmoke;
   }
 
-  ${(props) => props.theme.device?.mobile} {
+  ${(props) => props.theme.device?.tablet} {
     font-size: 4rem;
   }
 

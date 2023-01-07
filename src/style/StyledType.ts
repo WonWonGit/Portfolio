@@ -6,10 +6,10 @@ const size = {
 };
 
 const device = {
-  mobile: `@media only screen and (max-width: ${size.mobile})`,
-  mobileS: `@media only screen and (max-width: ${size.mobileS})`,
-  tablet: `@media only screen and (max-width: ${size.tablet})`,
-  desktop: `@media only screen and (max-width: ${size.desktop})`,
+  mobile: `@media screen and (max-width: ${size.mobile})`,
+  mobileS: `@media screen and (max-width: ${size.mobileS})`,
+  tablet: `@media screen and (max-width: ${size.tablet})`,
+  desktop: `@media screen and (max-width: ${size.desktop})`,
 };
 
 const lightColors = {

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import React from "react";
-import Star from "src/images/star.png";
+import Star from "../images/star.png";
 
 import {
   Fade,

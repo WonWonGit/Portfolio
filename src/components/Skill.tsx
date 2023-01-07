@@ -10,7 +10,7 @@ const SkillWrap = styled.div`
   margin: 100px auto;
   gap: 40px;
 
-  ${(props) => props.theme.device?.mobile} {
+  ${(props) => props.theme.device?.tablet} {
     grid-template-columns: repeat(2, 1fr);
   }
 
