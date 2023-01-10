@@ -1,13 +1,5 @@
 import React, { ReactNode } from "react";
-import styled from "styled-components";
-
-const StyledLayout = styled.main`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  background: ${(props) => props.theme.colors?.background};
-  height: auto;
-`;
+import { StyledLayout } from "./StyledLayout";
 
 interface PropsType {
   children: ReactNode[];

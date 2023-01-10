@@ -1,8 +1,6 @@
-import React from "react";
 import styled from "styled-components";
-import { skills } from "../datas/Skills";
 
-const SkillWrap = styled.div`
+export const SkillWrap = styled.div`
   width: 80%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -25,7 +23,7 @@ const SkillWrap = styled.div`
   }
 `;
 
-const SkillTitle = styled.div`
+export const SkillTitle = styled.div`
   font-family: "Barbra";
   font-size: 3rem;
   color: ${(props) => props.theme.colors?.pointColor};
@@ -39,23 +37,8 @@ const SkillTitle = styled.div`
   }
 `;
 
-const ImgDiv = styled.div`
+export const ImgDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
 `;
-
-const Skill = () => {
-  return (
-    <SkillWrap>
-      <SkillTitle>Skills</SkillTitle>
-      {skills.map((skill, index) => (
-        <ImgDiv key={index}>
-          <img src={skill.icon}></img>
-        </ImgDiv>
-      ))}
-    </SkillWrap>
-  );
-};
-
-export default Skill;

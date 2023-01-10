@@ -1,15 +1,12 @@
 import styled from "styled-components";
-import React from "react";
-import MyImg from "../images/subject.png";
-import Star from "../images/star.png";
-import { Fade } from "./StyledCommon";
+import { Fade } from "../StyledCommon";
 
 interface StarPosition {
   top: string;
   right: string;
 }
 
-const IntroWrap = styled.div`
+export const IntroWrap = styled.div`
   display: flex;
   width: 80%;
   margin: 50px auto;
@@ -24,19 +21,19 @@ const IntroWrap = styled.div`
   }
 `;
 
-const IntroTitle = styled.div`
+export const IntroTitle = styled.div`
   font-family: "Barbra";
   font-size: 3rem;
   color: ${(props) => props.theme.colors?.pointColor};
   padding-bottom: 20px;
 `;
 
-const IntroLeft = styled.div`
+export const IntroLeft = styled.div`
   flex: 1;
   animation: ${Fade} 4s forwards;
 `;
 
-const IntroRight = styled.div`
+export const IntroRight = styled.div`
   flex: 1;
   justify-content: end;
   display: flex;
@@ -63,7 +60,7 @@ const IntroRight = styled.div`
   }
 `;
 
-const ProfileImg = styled.img`
+export const ProfileImg = styled.img`
   width: 300px;
   position: absolute;
   right: 15px;
@@ -74,34 +71,9 @@ const ProfileImg = styled.img`
   }
 `;
 
-const ProfileStar = styled.img<StarPosition>`
+export const ProfileStar = styled.img<StarPosition>`
   position: absolute;
   top: ${(props) => props.top};
   right: ${(props) => props.right};
   width: 32px;
 `;
-
-const Intro = () => {
-  return (
-    <IntroWrap>
-      <IntroLeft>
-        <IntroTitle>Hello</IntroTitle>
-        <div>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis
-          repellat architecto provident unde aliquid vero distinctio, quos
-          nesciunt quaerat quisquam enim laudantium iste quo aspernatur veniam
-          eos? Amet, repellendus non!
-        </div>
-      </IntroLeft>
-      <IntroRight>
-        <div>
-          <ProfileStar top={"-60px"} right={"0px"} src={Star}></ProfileStar>
-          <ProfileStar top={"-31px"} right={"-20px"} src={Star}></ProfileStar>
-          <ProfileImg src={MyImg}></ProfileImg>
-        </div>
-      </IntroRight>
-    </IntroWrap>
-  );
-};
-
-export default Intro;

@@ -1,7 +1,6 @@
 import styled from "styled-components";
-import React from "react";
 
-const HeaderStyled = styled.div`
+export const HeaderStyled = styled.div`
   width: 100%;
   color: ${(props) => props.theme.colors?.fontColor};
   display: flex;
@@ -20,14 +19,3 @@ const HeaderStyled = styled.div`
     }
   }
 `;
-
-const Header = () => {
-  return (
-    <HeaderStyled>
-      <div>SUWON BAEK</div>
-      <div>WEB DEVELOPER</div>
-    </HeaderStyled>
-  );
-};
-
-export default Header;

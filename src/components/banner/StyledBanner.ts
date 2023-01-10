@@ -1,15 +1,7 @@
 import styled from "styled-components";
-import React from "react";
-import Star from "../images/star.png";
+import { Fade } from "../StyledCommon";
 
-import {
-  Fade,
-  StarDivLeft,
-  StarDivRight,
-  StyledBannerTitle,
-} from "./StyledCommon";
-
-const StyledBanner = styled.div`
+export const StyledBanner = styled.div`
   height: 500px;
   width: 80%;
   margin: 0 auto;
@@ -17,7 +9,7 @@ const StyledBanner = styled.div`
   animation: ${Fade} 2s forwards;
 `;
 
-const StyledBannerImg = styled.div`
+export const StyledBannerImg = styled.div`
   width: 250px;
   background: aqua;
   border-radius: 50%;
@@ -37,18 +29,3 @@ const StyledBannerImg = styled.div`
     height: 55%;
   }
 `;
-
-const Banner = () => {
-  return (
-    <StyledBanner>
-      <StyledBannerTitle>
-        <StarDivLeft src={Star} />
-        <div className="main">Portfolio</div>
-        <StarDivRight src={Star} />
-      </StyledBannerTitle>
-      <StyledBannerImg></StyledBannerImg>
-    </StyledBanner>
-  );
-};
-
-export default Banner;
