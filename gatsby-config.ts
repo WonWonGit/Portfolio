@@ -73,7 +73,7 @@ const config: GatsbyConfig = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              linkImagesToOriginal: false,
+              linkImagesToOriginal: true,
               backgroundColor: `none`,
               loading: `eager`,
               quality: 100,
