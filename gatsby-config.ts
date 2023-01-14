@@ -109,6 +109,7 @@ const config: GatsbyConfig = {
     },
     "rehype-react",
   ],
+  pathPrefix: "/Portfolio",
 };
 
 export default config;

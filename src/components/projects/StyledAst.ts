@@ -10,7 +10,7 @@ export const P = styled.p`
 export const H2 = styled.div`
   width: 100%;
   display: flex;
-  color: ${(props) => props.theme.colors.pointColor};
+  color: ${(props) => props.theme.colors?.pointColor};
   font-family: "Barbra";
   font-size: 3rem;
   margin-bottom: 20px;
@@ -48,7 +48,7 @@ export const ProjectContetWrap = styled.div`
       .aboutImg {
         width: 400px;
         height: 400px;
-        background: ${(props) => props.theme?.colors.pointColor};
+        background: ${(props) => props.theme.colors?.pointColor};
         border-radius: 30px;
         display: flex;
         margin: 0 auto;
