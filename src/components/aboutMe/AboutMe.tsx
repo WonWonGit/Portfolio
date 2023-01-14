@@ -31,7 +31,7 @@ const AboutMe = () => {
   return (
     <>
       <div ref={homeRef}>
-        <SubBanner title="ABOUT ME" />
+        <SubBanner title="ABOUT ME" page="main" />
       </div>
       <AboutMeWrap>
         <>

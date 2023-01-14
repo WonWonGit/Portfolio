@@ -55,10 +55,34 @@ const config: GatsbyConfig = {
   graphqlTypegen: true,
   plugins: [
     "gatsby-plugin-styled-components",
-    "gatsby-plugin-image",
-    "gatsby-plugin-mdx",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    `gatsby-plugin-mdx`,
+    {
+      resolve: `gatsby-plugin-image`,
+      options: {
+        backgroundColor: `none`,
+        loading: "eager",
+        quality: 100,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              linkImagesToOriginal: false,
+              backgroundColor: `none`,
+              loading: `eager`,
+              quality: 100,
+              maxWidth: 1200,
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -75,6 +99,15 @@ const config: GatsbyConfig = {
       },
       __key: "pages",
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "projects",
+        path: `${__dirname}/projects/`,
+      },
+      __key: "projects",
+    },
+    "rehype-react",
   ],
 };
 

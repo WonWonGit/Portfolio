@@ -5,7 +5,7 @@ import { ProjectWrap, ProjectSubTitle, ProjectBody } from "./StyledProject";
 const Project = () => {
   return (
     <>
-      <SubBanner title="PROJECT" />
+      <SubBanner title="PROJECT" page="main" />
       <ProjectWrap>
         <ProjectSubTitle>Project</ProjectSubTitle>
         <ProjectBody>
