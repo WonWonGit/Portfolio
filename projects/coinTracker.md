@@ -1,60 +1,82 @@
 ---
 idx: 1
-title: "Coin tracker"
+title: "CoinTracker"
 group: "toy"
 ---
 
-<div>
-    <About>
-    A website for shopping that allows customization to fit one's measurements through VR. Not only can it be registered as a private business for selling, but also allows for purchasing. With simple membership registration through social login, the main focus is on customization, allowing for detailed searches of individual measurements, style, clothing material, and even the shape of the collar, enabling users to find the desired clothing.
-    </About>
-    <ButtonWrap>
-        <div>Viewsite</div>
-    </ButtonWrap>
+<div class="aboutWrap">
+    <div class="aboutImgWrap">
+        <div class="aboutImg">
+            <div class="spark">
+                <img src="./images/spark.png">
+            </div>
+            <div class="main">
+                <img src="./images/coinTracker/coinTrackerMain.png">
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <div class="aboutTitle">
+        ABOUT
+        </div>
+        <div class="aboutContent">
+        This is a website that allows you to compare information and prices of virtual currencies through a virtual currency API. It has been implemented to easily compare values through graphs using apexcharts.
+        </div>
+        <div class="btnWrap">
+            <div class="btn"><a href="https://github.com/WonWonGit/coin-tracker" target='_blank'>CODE</a></div>
+            <div class="btn">
+                <a href="https://wonwongit.github.io/coin-tracker/" target='_blank'>TRY</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+## Images
+
+<div class="imgWrap">
+
+<div class="projectImg">
+
+![coinTracker](./images/coinTracker/coinTracker01.png)
+
+</div>
+<div class="projectImg">
+
+![coinTracker](./images/coinTracker/coinTracker02.png)
+
+</div>
+<div class="projectImg">
+
+![coinTracker](./images/coinTracker/coinTracker04.png)
+
+</div>
+
 </div>
 
 ## Details
 
 ### Members
 
-Server : 5
-Designer : 2
-FrontEnd : 2
+2
 
 ### Duration
 
-6month
+1month
 
 ## Stacks
 
-<div>
-   <Stacks>
-    <div>
-    - Spring boot
-    - Java 11
-    - Gradle
-    - Spring OAuth
-    - Spring Security
+<div class='stackWrap'>
+   <div class="stacks">
+        <ul class="stacksList">
+            <li>React</li>
+            <li>React-Query</li>
+            <li>Styled-component</li>
+            <li>apexcharts</li>
+        </ul>
     </div>
-    <div>
-    - Tymeleaf
-    - Query DSL
-    - JPA
-    - AWS
-    - HTML / CSS / JavaScript
-    </div>
-    <div>
-    - Maria DB
-    - Slack
-    - Github
-    </div>
-   </Stacks> 
+   </div> 
 </div>
 
 ## What I focus on
 
-<div>
-<Focus>
-In my first project at the company, I put in effort to align with the existing code style and format used by the company. Since we were working as a team, I paid extra attention to naming conventions. My specific role in the project was to implement customer experience and Q&A features, including a "like" button, ranking system, and search filters for clothing attributes such as material and fit. The filtering process required a lot of attention to detail, so I focused on making it as efficient as possible and anticipating user actions to prevent errors in the code.
-</Focus>
-<div>
+I have always been concerned about how to separate client logic and server logic while using React. To improve this problem, I wanted to use React-Query to separate client and server logic, making it more intuitive and easy to manage in the future.

@@ -20,39 +20,72 @@ group: "project"
     ABOUT
     </div>
     <div class="aboutContent">
-    This is a toy project I worked on after finishing a JavaScript group study. The website, called "MMM" uses audio visualization to display visual effects on the screen based on the frequency of music. I used an indexedDB web storage to store mp3 files in blob form without any problems. I also implemented audio web API to enable users to control the music, such as playing and pausing.
-    </div>
-    <div>
-        <a>code</a>
-        <a>view</a>
+    An app that lets you buy products and subscribe to magazines by earning points. You can earn points by doing things like tracking your steps and playing games. The app also has campaigns that let you donate your skills to help others and build a community. It's designed to help improve your overall lifestyle.
     </div>
     </div>
+</div>
+
+## Images
+
+<div class="imgWrap">
+
+<div class="projectImg">
+
+![jadoo](./images/jadoo/jadoo01.png)
+
+</div>
+<div class="projectImg">
+
+![jadoo](./images/jadoo/jadoo02.png)
+
+</div>
+<div class="projectImg">
+
+![jadoo](./images/jadoo/jadoo03.png)
+
+</div>
+
 </div>
 
 ## Details
 
 ### Members
 
-2
+Server : 3
+
+Front : 2
+
+Application : 4
+
+Design : 3
 
 ### Duration
 
-1month
+7month
 
 ## Stacks
 
 <div class='stackWrap'>
    <div class="stacks">
         <ul class="stacksList">
-            <li>HTML</li>
-            <li>Javascript</li>
-            <li>CSS</li>
-            <li>Indexed DB</li>
+            <li>Next JS</li>
+            <li>SCSS</li>
+            <li>MobX</li>
+            <li>Axios</li>
         </ul>
     </div>
+    <div class="stacks">
+        <ul class="stacksList">
+            <li>Swagger</li>
+            <li>Github</li>
+            <li>JWT</li>
+            <li>Figma</li>
+        </ul>
+        </div>
    </div> 
 </div>
 
 ## What I focus on
 
-I have always been interested in learning more about the canvas element in HTML. During a JavaScript group study, I focused on creating visually pleasing websites using a combination of HTML and vanilla JS. I also paid attention to controlling animations to draw models on canvas one by one and handling synchronous processing.
+As an admin website, my primary goal was to provide a user-friendly interface that allows for easy monitoring of user and app-related information. A key feature of the website is the dashboard, which provides an overview of key metrics such as sales, points, and users, allowing for quick and easy analysis of important data.
+To ensure the security and integrity of the platform, I implemented various measures such as maintaining secure login sessions, managing access tokens, and implementing strict security protocols throughout the front-end. Additionally, I took great care in ensuring that the overall design and functionality of the website is professional and meets the needs of the admin user.

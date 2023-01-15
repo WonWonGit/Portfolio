@@ -1,18 +1,48 @@
 ---
 idx: 6
-title: "technomade"
+title: "Technomade"
 group: "project"
 ---
 
-## About
+<div class="aboutWrap">
+    <div class="aboutImgWrap">
+    <div class="aboutImg">
+    <div class="spark">
+    <img src="./images/spark.png">
+    </div>
+    <div class="main">
+    <img src="./images/techno/technomain.png">
+    </div>
+    </div>
+    </div>
+    <div class="about">
+    <div class="aboutTitle">
+    ABOUT
+    </div>
+    <div class="aboutContent">
+     A website for shopping that allows customization to fit one's measurements through VR. Not only can it be registered as a private business for selling, but also allows for purchasing. With simple membership registration through social login, the main focus is on customization, allowing for detailed searches of individual measurements, style, clothing material, and even the shape of the collar, enabling users to find the desired clothing.
+     </div>
+    </div>
+</div>
 
-<div>
-    <About>
-    A website for shopping that allows customization to fit one's measurements through VR. Not only can it be registered as a private business for selling, but also allows for purchasing. With simple membership registration through social login, the main focus is on customization, allowing for detailed searches of individual measurements, style, clothing material, and even the shape of the collar, enabling users to find the desired clothing.
-    </About>
-    <ButtonWrap>
-        <div>Viewsite</div>
-    </ButtonWrap>
+## Images
+
+<div class="imgWrap">
+
+<div class="projectImg">
+
+![techno](./images/techno/techno1.png)
+
+</div>
+<div class="projectImg">
+
+![techno](./images/techno/techno2.png)
+
+</div>
+<div class="projectImg">
+
+</div>
+
 </div>
 
 ## Details
@@ -20,7 +50,9 @@ group: "project"
 ### Members
 
 Server : 5
+
 Designer : 2
+
 FrontEnd : 2
 
 ### Duration
@@ -29,34 +61,34 @@ FrontEnd : 2
 
 ## Stacks
 
-<div>
-   <Stacks>
-    <div>
-    - Spring boot
-    - Java 11
-    - Gradle
-    - Spring OAuth
-    - Spring Security
+<div class='stackWrap'>
+   <div class="stacks">
+        <ul class="stacksList">
+            <li>Spring boot</li>
+            <li>Java 11</li>
+            <li>Gradle</li>
+            <li>Spring Security</li>
+            <li>Spring OAuth</li>
+        </ul>
     </div>
-    <div>
-    - Tymeleaf
-    - Query DSL
-    - JPA
-    - AWS
-    - HTML / CSS / JavaScript
+    <div class="stacks">
+        <ul class="stacksList">
+            <li>Tymeleaf</li>
+            <li>Query DSL</li>
+            <li>JPA</li>
+            <li>AWS</li>
+            <li>HTML / CSS / JavaScript</li>
+        </ul>
     </div>
-    <div>
-    - Maria DB
-    - Slack
-    - Github
+    <div class="stacks">
+        <ul class="stacksList">
+            <li>Maria DB</li>
+            <li>Slack</li>
+            <li>Github</li>
+        </ul>
     </div>
-   </Stacks> 
 </div>
 
 ## What I focus on
 
-<div>
-<Focus>
-In my first project at the company, I put in effort to align with the existing code style and format used by the company. Since we were working as a team, I paid extra attention to naming conventions. My specific role in the project was to implement customer experience and Q&A features, including a "like" button, ranking system, and search filters for clothing attributes such as material and fit. The filtering process required a lot of attention to detail, so I focused on making it as efficient as possible and anticipating user actions to prevent errors in the code.
-</Focus>
-<div>
+In my first project at the company, I put in effort to align with the existing code style and format used by the company. Since we were working as a team, I paid extra attention to naming conventions. My specific role in the project was to implement customer experience, including a "like" button, ranking system, and search filters for clothing attributes such as material and fit. The filtering process required a lot of attention to detail, so I focused on making it as efficient as possible and anticipating user actions to prevent errors in the code.

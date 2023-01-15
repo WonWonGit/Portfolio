@@ -5,6 +5,10 @@ import Yellow from "../../images/spark.png";
 export const P = styled.p`
   line-height: 25px;
   font-size: 20px;
+
+  ${(props) => props.theme.device?.mobile} {
+    font-size: 14px;
+  }
 `;
 
 export const H2 = styled.div`
@@ -17,7 +21,7 @@ export const H2 = styled.div`
   margin-top: 60px;
 
   ${(props) => props.theme.device?.mobile} {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 `;
 
@@ -27,6 +31,10 @@ export const H3 = styled.div`
   font-weight: 700;
   font-size: 2rem;
   margin: 20px 0;
+
+  ${(props) => props.theme.device?.mobile} {
+    font-size: 1rem;
+  }
 `;
 
 export const Img = styled.img`
@@ -181,6 +189,10 @@ export const ProjectContetWrap = styled.div`
     .aboutContent {
       line-height: 25px;
       font-size: 20px;
+
+      ${(props) => props.theme.device?.mobile} {
+        font-size: 14px;
+      }
     }
 
     .aboutTitle {
@@ -189,18 +201,83 @@ export const ProjectContetWrap = styled.div`
       color: #ff7400;
       margin-bottom: 20px;
     }
+
+    .btnWrap {
+      display: flex;
+      justify-content: flex-end;
+
+      .btn {
+        width: 100px;
+        background: black;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+        color: whitesmoke;
+        border-radius: 12px;
+        margin-right: 20px;
+
+        ${(props) => props.theme.device?.mobile} {
+          width: 80px;
+          padding: 10px 0;
+        }
+
+        a {
+          display: block;
+
+          :hover {
+            cursor: pointer;
+          }
+
+          ${(props) => props.theme.device?.mobile} {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .imgWrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 80px 0;
+
+    ${(props) => props.theme.device?.tablet} {
+      flex-direction: column;
+    }
+
+    .projectImg {
+      width: 300px;
+
+      ${(props) => props.theme.device?.tablet} {
+        width: 100%;
+        margin: 40px 0;
+      }
+    }
   }
 
   .stackWrap {
     display: flex;
 
+    ${(props) => props.theme.device?.mobile} {
+      flex-direction: column;
+    }
+
     .stacks {
       flex: 1;
+
+      ${(props) => props.theme.device?.mobile} {
+        margin: 20px 0;
+      }
 
       .stacksList {
         li {
           padding: 4px 0;
           font-size: 20px;
+
+          ${(props) => props.theme.device?.mobile} {
+            font-size: 14px;
+          }
         }
       }
     }
