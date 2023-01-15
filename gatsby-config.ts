@@ -2,9 +2,8 @@ import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `Gatsby Portfolio`,
-    siteUrl: `https://www.yourdomain.tld`,
-    intro: "",
+    hello:
+      "Hi! I'm Suwon Baek from Korea. I am constantly driven to learn and improve my skills. With over 2 years of experience under my belt, I have a strong foundation in a variety of programming languages including JavaScript, Java, React, Spring Boot and other frameworks. I am passionate about building web applications that deliver a seamless and enjoyable user experience. I am dedicated to continuously evolving as a developer and strive to stay up-to-date on the latest technologies and industry best practices.",
     keyPoint: [
       {
         title: "Communication",
@@ -48,6 +47,7 @@ const config: GatsbyConfig = {
         ],
       },
     ],
+    test: "/images/spark.png",
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin

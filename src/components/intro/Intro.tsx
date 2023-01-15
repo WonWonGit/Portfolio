@@ -4,6 +4,7 @@ import MyImg from "../../images/subject.png";
 import Star from "../../images/star.png";
 
 import {
+  IntroContent,
   IntroLeft,
   IntroRight,
   IntroTitle,
@@ -11,18 +12,16 @@ import {
   ProfileImg,
   ProfileStar,
 } from "./StyledIntro";
+import { useIntro } from "../../hooks/useMetaIntro";
 
 const Intro = () => {
+  const data = useIntro();
+
   return (
     <IntroWrap>
       <IntroLeft>
         <IntroTitle>Hello</IntroTitle>
-        <div>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis
-          repellat architecto provident unde aliquid vero distinctio, quos
-          nesciunt quaerat quisquam enim laudantium iste quo aspernatur veniam
-          eos? Amet, repellendus non!
-        </div>
+        <IntroContent>{data}</IntroContent>
       </IntroLeft>
       <IntroRight>
         <div>

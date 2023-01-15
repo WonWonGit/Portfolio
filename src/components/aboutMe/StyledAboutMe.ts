@@ -39,7 +39,7 @@ export const Title = styled.div`
   padding-bottom: 25px;
 
   ${(props) => props.theme.device?.mobile} {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 `;
 
@@ -63,21 +63,30 @@ export const GridDiv = styled.div<StyleType>`
 `;
 
 export const GridContent = styled.div`
-  font-size: 20px;
+  font-size: 18px;
 
   ${(props) => props.theme.device?.tablet} {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   p {
     line-height: 30px;
+
+    ${(props) => props.theme.device?.tablet} {
+      font-size: 14px;
+    }
   }
   .link {
     font-size: 25px;
     padding-top: 20px;
+    word-break: break-all;
 
     ${(props) => props.theme.device?.tablet} {
       font-size: 20px;
+    }
+
+    ${(props) => props.theme.device?.mobile} {
+      font-size: 15px;
     }
   }
 `;

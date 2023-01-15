@@ -76,9 +76,9 @@ Design : 3
     </div>
     <div class="stacks">
         <ul class="stacksList">
+            <li>TypeScript</li>
             <li>Swagger</li>
             <li>Github</li>
-            <li>JWT</li>
             <li>Figma</li>
         </ul>
         </div>

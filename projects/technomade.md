@@ -73,7 +73,7 @@ FrontEnd : 2
     </div>
     <div class="stacks">
         <ul class="stacksList">
-            <li>Tymeleaf</li>
+            <li>Thymeleaf</li>
             <li>Query DSL</li>
             <li>JPA</li>
             <li>AWS</li>

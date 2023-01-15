@@ -11,9 +11,9 @@ export const IntroWrap = styled.div`
   width: 80%;
   margin: 50px auto;
 
-  ${(props) => props.theme.device?.mobile} {
-    margin: 30px auto;
-    flex-direction: column;
+  ${(props) => props.theme.device?.tablet} {
+    flex-direction: column-reverse;
+    justify-content: center;
   }
 
   ${(props) => props.theme.device?.mobileS} {
@@ -48,14 +48,14 @@ export const IntroRight = styled.div`
     background: ${(props) => props.theme.colors?.pointColor};
     border-radius: 27px;
 
-    ${(props) => props.theme.device?.tablet} {
+    ${(props) => props.theme.device?.mobile} {
       width: 200px;
       height: 200px;
     }
   }
 
   ${(props) => props.theme.device?.mobile} {
-    margin-top: 120px;
+    margin-bottom: 120px;
     justify-content: center;
   }
 `;
@@ -66,7 +66,7 @@ export const ProfileImg = styled.img`
   right: 15px;
   bottom: 0;
 
-  ${(props) => props.theme.device?.tablet} {
+  ${(props) => props.theme.device?.mobile} {
     width: 200px;
   }
 `;
@@ -76,4 +76,9 @@ export const ProfileStar = styled.img<StarPosition>`
   top: ${(props) => props.top};
   right: ${(props) => props.right};
   width: 32px;
+`;
+
+export const IntroContent = styled.div`
+  font-size: 18px;
+  line-height: 30px;
 `;

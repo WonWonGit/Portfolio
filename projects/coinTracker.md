@@ -77,6 +77,18 @@ group: "toy"
    </div> 
 </div>
 
-## What I focus on
+## What I focused on
 
 I have always been concerned about how to separate client logic and server logic while using React. To improve this problem, I wanted to use React-Query to separate client and server logic, making it more intuitive and easy to manage in the future.
+
+## Blog Posts
+
+During this project I made few posts about what I learned.
+
+<br/>
+<br/>
+
+👉🏻 [React-qeury](https://medium.com/@bkn020612/react-qeury-62837c1ce4d8)
+<br/>
+<br/>
+👉🏻 [What is TypeScript?](https://medium.com/@bkn020612/typescript-2a81f2076962)
