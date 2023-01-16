@@ -125,3 +125,11 @@ export const GridTitleCard = styled(GridDiv)`
     bottom: 0;
   }
 `;
+
+export const AboutMeSub = styled.div`
+  margin: 0 auto;
+  width: 80%;
+  line-height: 25px;
+  margin-top: 40px;
+  font-size: 20px;
+`;

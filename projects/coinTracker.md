@@ -57,11 +57,11 @@ group: "toy"
 
 ### Members
 
-2
+1
 
 ### Duration
 
-1month
+3days
 
 ## Stacks
 
@@ -77,7 +77,7 @@ group: "toy"
    </div> 
 </div>
 
-## What I focused on
+## What I focus / goal
 
 I have always been concerned about how to separate client logic and server logic while using React. To improve this problem, I wanted to use React-Query to separate client and server logic, making it more intuitive and easy to manage in the future.
 

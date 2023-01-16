@@ -101,7 +101,7 @@ group: "side"
    </div> 
 </div>
 
-## What I focus on
+## What I focus / goal
 
 Even though I am working on this project alone, I am focusing on writing test codes for future version management. Additionally, I am planning to use swagger for server documentation and a style book for front-end documentation to ensure clear documentation. Currently, I believe the server is about 70% completed. Regarding the front-end structure, to maintain consistency in style, I have implemented a monorepo structure.
 

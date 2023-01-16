@@ -85,7 +85,7 @@ Design : 3
    </div> 
 </div>
 
-## What I focus on
+## What I focus / goal
 
 As an admin website, my primary goal was to provide a user-friendly interface that allows for easy monitoring of user and app-related information. A key feature of the website is the dashboard, which provides an overview of key metrics such as sales, points, and users, allowing for quick and easy analysis of important data.
 To ensure the security and integrity of the platform, I implemented various measures such as maintaining secure login sessions, managing access tokens, and implementing strict security protocols throughout the front-end. Additionally, I took great care in ensuring that the overall design and functionality of the website is professional and meets the needs of the admin user.

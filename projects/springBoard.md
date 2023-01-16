@@ -80,7 +80,7 @@ group: "toy"
    </div> 
 </div>
 
-## What I focus on
+## What I focus / goal
 
 I aimed to grasp basic JPA syntax and concepts by creating this project. Additionally, I used Spring OAuth2.0 to improve my understanding of security-related concepts.
 

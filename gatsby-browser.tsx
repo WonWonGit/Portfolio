@@ -6,6 +6,17 @@ import { LightTheme, DarkTheme } from "./src/style/StyledType";
 import ThemeToggle from "./src/components/theme/ThemeToggle";
 import useTheme from "./src/components/theme/useTheme";
 
+export const onInitialClientRender = () => {
+  const loader = document.getElementById("___loader");
+  if (loader != null) {
+    setTimeout(function () {
+      loader.style.transition = ".5s";
+      loader.style.opacity = "0";
+      loader.style.display = "none";
+    }, 500);
+  }
+};
+
 export const wrapPageElement: GatsbyBrowser["wrapPageElement"] = ({
   element,
 }) => {

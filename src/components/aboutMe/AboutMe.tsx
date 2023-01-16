@@ -9,6 +9,7 @@ import {
   GridContent,
   GridTitleDiv,
   GridTitleCard,
+  AboutMeSub,
 } from "./StyledAboutMe";
 
 interface DataType {
@@ -33,6 +34,10 @@ const AboutMe = () => {
       <div ref={homeRef}>
         <SubBanner title="ABOUT ME" page="main" />
       </div>
+      <AboutMeSub>
+        Interested in working together? Here are a few things about me, and my
+        strengths:
+      </AboutMeSub>
       <AboutMeWrap>
         <>
           {datas.map((data, index) => (
