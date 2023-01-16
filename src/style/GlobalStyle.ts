@@ -54,7 +54,7 @@ table {
 }
 body{
   font-family: 'Pretendard', sans-serif;
- 
+  font-weight: 100;
 }
 
 a{

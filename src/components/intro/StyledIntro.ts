@@ -81,4 +81,6 @@ export const ProfileStar = styled.img<StarPosition>`
 export const IntroContent = styled.div`
   font-size: 18px;
   line-height: 30px;
+
+  color: ${(props) => props.theme.colors?.fontColor};
 `;

@@ -91,10 +91,14 @@ During this project I made few posts about what I learned.
 <br/>
 <br/>
 
-👉🏻 [What is Spring Security](https://medium.com/@bkn020612/what-is-spring-security-fafd919f1dfb)
+<a href="https://medium.com/@bkn020612/what-is-spring-security-fafd919f1dfb" target='_blank'>👉🏻 What is Spring Security</a>
+
 <br/>
 <br/>
-👉🏻 [How to set up Spring Security?](https://medium.com/@bkn020612/how-to-set-up-spring-security-f2d3486b9a89)
+
+<a href="https://medium.com/@bkn020612/how-to-set-up-spring-security-f2d3486b9a89" target='_blank'>👉🏻 How to set up Spring Security?</a>
+
 <br/>
 <br/>
-👉🏻 [Access control with Spring Security](https://medium.com/@bkn020612/access-control-with-spring-security-feaabddbfeac)
+
+<a href="https://medium.com/@bkn020612/access-control-with-spring-security-feaabddbfeac" target='_blank'>👉🏻 Access control with Spring Security</a>

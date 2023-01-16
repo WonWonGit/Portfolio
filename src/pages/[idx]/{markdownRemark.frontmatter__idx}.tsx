@@ -1,7 +1,7 @@
 import { unified } from "unified";
 import rehypeReact from "rehype-react";
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, HeadFC, Link } from "gatsby";
 import Layout from "../../components/layout/Layout";
 import styled from "styled-components";
 import SubBanner from "../../components/subBanner/SubBanner";
@@ -25,14 +25,39 @@ const renderAst = (ast: any): JSX.Element => {
   return processor.stringify(ast) as unknown as JSX.Element;
 };
 
+const BackBtn = styled.div`
+  position: sticky;
+  bottom: 20px;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  background: ${(props) => props.theme.colors?.fontColor};
+  color: ${(props) => props.theme.colors?.background};
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  font-weight: 900;
+
+  :hover {
+    cursor: pointer;
+  }
+`;
+
 const ProjcetPage = ({ data }: any) => {
   const { htmlAst, frontmatter } = data.markdownRemark;
 
   return (
-    <Layout>
-      <SubBanner title={frontmatter.title} page="project" />
-      <ProjectContetWrap>{renderAst(htmlAst)}</ProjectContetWrap>
-    </Layout>
+    <>
+      <Layout>
+        <SubBanner title={frontmatter.title} page="project" />
+        <ProjectContetWrap>{renderAst(htmlAst)}</ProjectContetWrap>
+        <BackBtn>
+          <Link to="/">&larr;</Link>
+        </BackBtn>
+      </Layout>
+    </>
   );
 };
 
@@ -49,3 +74,5 @@ export const query = graphql`
 `;
 
 export default ProjcetPage;
+
+export const Head: HeadFC = () => <title>Project</title>;

@@ -5,6 +5,7 @@ import Yellow from "../../images/spark.png";
 export const P = styled.p`
   line-height: 25px;
   font-size: 20px;
+  color: ${(props) => props.theme.colors?.fontColor};
 
   ${(props) => props.theme.device?.mobile} {
     font-size: 14px;
@@ -31,6 +32,7 @@ export const H3 = styled.div`
   font-weight: 700;
   font-size: 2rem;
   margin: 20px 0;
+  color: ${(props) => props.theme.colors?.fontColor};
 
   ${(props) => props.theme.device?.mobile} {
     font-size: 1rem;
@@ -106,9 +108,18 @@ export const ProjectContetWrap = styled.div`
             height: 250px;
           }
 
+          ${(props) => props.theme.device?.tablet} {
+            top: -7px;
+            width: 294px;
+            /* height: 288px; */
+            left: -44px;
+          }
+
           ${(props) => props.theme.device?.mobile} {
             width: 180px;
             height: 200px;
+            left: -2px;
+            top: 40px;
           }
 
           ${(props) => props.theme.device?.mobileS} {
@@ -178,7 +189,7 @@ export const ProjectContetWrap = styled.div`
       width: 50%;
       flex-direction: column;
       display: flex;
-      margin-left: 50px;
+      margin-left: 100px;
 
       ${(props) => props.theme.device?.tablet} {
         width: 100%;
@@ -189,6 +200,7 @@ export const ProjectContetWrap = styled.div`
     .aboutContent {
       line-height: 25px;
       font-size: 20px;
+      color: ${(props) => props.theme.colors?.fontColor};
 
       ${(props) => props.theme.device?.mobile} {
         font-size: 14px;
@@ -209,7 +221,7 @@ export const ProjectContetWrap = styled.div`
       .btn {
         width: 100px;
         background: black;
-        padding: 20px 0;
+        padding: 10px 0;
         display: flex;
         justify-content: center;
         margin: 20px 0;
@@ -241,6 +253,7 @@ export const ProjectContetWrap = styled.div`
     display: flex;
     justify-content: space-between;
     margin: 20px 0 80px 0;
+    gap: 20px;
 
     ${(props) => props.theme.device?.tablet} {
       flex-direction: column;
@@ -274,6 +287,7 @@ export const ProjectContetWrap = styled.div`
         li {
           padding: 4px 0;
           font-size: 20px;
+          color: ${(props) => props.theme.colors?.fontColor};
 
           ${(props) => props.theme.device?.mobile} {
             font-size: 14px;

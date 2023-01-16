@@ -3,7 +3,7 @@ import type { GatsbyConfig } from "gatsby";
 const config: GatsbyConfig = {
   siteMetadata: {
     hello:
-      "Hi! I'm Suwon Baek from Korea. I am constantly driven to learn and improve my skills. With over 2 years of experience under my belt, I have a strong foundation in a variety of programming languages including JavaScript, Java, React, Spring Boot and other frameworks. I am passionate about building web applications that deliver a seamless and enjoyable user experience. I am dedicated to continuously evolving as a developer and strive to stay up-to-date on the latest technologies and industry best practices.",
+      "Hi! I'm Suwon Baek from Korea. I am constantly driven to learn and improve my skills. With over 2 years of experience under my belt, I have a strong foundation in a variety of programming languages including JavaScript, Java, React, Spring Boot and other frameworks. I am passionate about building web applications that deliver a seamless and enjoyable user experience.",
     keyPoint: [
       {
         title: "Communication",

@@ -20,7 +20,7 @@ group: "project"
     ABOUT
     </div>
     <div class="aboutContent">
-     A website for shopping that allows customization to fit one's measurements through VR. Not only can it be registered as a private business for selling, but also allows for purchasing. With simple membership registration through social login, the main focus is on customization, allowing for detailed searches of individual measurements, style, clothing material, and even the shape of the collar, enabling users to find the desired clothing.
+     A website for shopping that allows customization to fit one's measurements through AR. Not only can it be registered as a private business for selling, but also allows for purchasing. With simple membership registration through social login, the main focus is on customization, allowing for detailed searches of individual measurements, style, clothing material, and even the shape of the collar, enabling users to find the desired clothing.
      </div>
     </div>
 </div>

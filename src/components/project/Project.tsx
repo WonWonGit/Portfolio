@@ -3,7 +3,7 @@ import SubBanner from "../subBanner/SubBanner";
 import { ProjectWrap, ProjectSubTitle, ProjectBody } from "./StyledProject";
 import Jadoo from "../../images/project/jadooweb.png";
 import Techno from "../../images/project/techno.png";
-import Prozet from "../../images/sideProject/prozet01.png";
+import Prozet from "../../images/sideProject/prozet.png";
 import CoinTraker from "../../images/toyProject/coinTracker01.png";
 import Mmm from "../../images/toyProject/mmm3.png";
 import SpringBoard from "../../images/toyProject/blog1.png";

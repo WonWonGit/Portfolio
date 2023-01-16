@@ -21,7 +21,7 @@ const lightColors = {
 const darkColors = {
   background: "#404040",
   fontColor: "#f5f5f5",
-  pointColor: "#1763d3",
+  pointColor: "#5d7fcf",
 };
 
 export type DeviceTypes = typeof device;

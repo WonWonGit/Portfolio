@@ -49,7 +49,7 @@ const AboutMe = () => {
                     return <p key={index}>{line}</p>;
                   } else {
                     return (
-                      <p className="link">
+                      <p className="link" key={index}>
                         {line.substring(0, line.indexOf(":") + 1)}
                         <a
                           href={line.substring(line.indexOf(":") + 1)}
@@ -77,7 +77,7 @@ const AboutMe = () => {
                     }
                     onClick={() => onClickTitleCard(data.title)}
                   >
-                    <Title>{data.title}</Title>
+                    <Title key={index}>{data.title}</Title>
                   </GridTitleCard>
                 );
               }

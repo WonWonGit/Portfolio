@@ -16,6 +16,8 @@ export const ProjectSubTitle = styled.div`
 export const ProjectBody = styled.div`
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
 
   ${(props) => props.theme.device?.tablet} {
     flex-direction: column;
@@ -44,21 +46,4 @@ export const ProjectBody = styled.div`
       transform: translateY(-10px);
     }
   }
-
-  /* div {
-    height: 200px;
-  }
-
-  div:nth-child(1) {
-    flex: 1;
-  }
-
-  div:nth-child(2) {
-    width: 2px;
-    background: ${(props) => props.theme.colors?.pointColor};
-  }
-
-  div:nth-child(3) {
-    flex: 1;
-  } */
 `;
