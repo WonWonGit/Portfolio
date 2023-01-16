@@ -13,7 +13,7 @@ export const onInitialClientRender = () => {
       loader.style.transition = ".5s";
       loader.style.opacity = "0";
       loader.style.display = "none";
-    }, 500);
+    }, 1000);
   }
 };
 
