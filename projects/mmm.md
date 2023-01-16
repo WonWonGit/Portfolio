@@ -75,7 +75,7 @@ group: "toy"
    </div> 
 </div>
 
-## What I focus / goal
+## Focus / Goal
 
 I have always been interested in learning more about the canvas element in HTML. During a JavaScript group study, I focused on creating visually pleasing websites using a combination of HTML and vanilla JS. I also paid attention to controlling animations to draw models on canvas one by one and handling synchronous processing.
 

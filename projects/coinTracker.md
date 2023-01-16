@@ -77,7 +77,7 @@ group: "toy"
    </div> 
 </div>
 
-## What I focus / goal
+## Focus / Goal
 
 I have always been concerned about how to separate client logic and server logic while using React. To improve this problem, I wanted to use React-Query to separate client and server logic, making it more intuitive and easy to manage in the future.
 

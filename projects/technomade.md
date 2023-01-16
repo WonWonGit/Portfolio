@@ -89,6 +89,6 @@ FrontEnd : 2
     </div>
 </div>
 
-## What I focus / goal
+## Focus / Goal
 
 In my first project at the company, I put in effort to align with the existing code style and format used by the company. Since we were working as a team, I paid extra attention to naming conventions. My specific role in the project was to implement customer experience, including a "like" button, ranking system, and search filters for clothing attributes such as material and fit. The filtering process required a lot of attention to detail, so I focused on making it as efficient as possible and anticipating user actions to prevent errors in the code.
