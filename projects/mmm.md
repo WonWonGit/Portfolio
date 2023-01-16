@@ -79,9 +79,9 @@ group: "toy"
 
 I have always been interested in learning more about the canvas element in HTML. During a JavaScript group study, I focused on creating visually pleasing websites using a combination of HTML and vanilla JS. I also paid attention to controlling animations to draw models on canvas one by one and handling synchronous processing.
 
-## Blog Posts
+<!-- ## Blog Posts
 
 During this project I made few posts about what I learned.
 
 <br/>
-<br/>
+<br/> -->
