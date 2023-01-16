@@ -132,4 +132,6 @@ export const AboutMeSub = styled.div`
   line-height: 25px;
   margin-top: 40px;
   font-size: 20px;
+
+  color: ${(props) => props.theme.colors?.fontColor};
 `;
