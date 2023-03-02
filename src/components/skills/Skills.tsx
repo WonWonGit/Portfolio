@@ -1,72 +1,20 @@
 import { useSkills } from "../../hooks/useSkills";
 import React from "react";
-import styled from "styled-components";
 import Smile from "../../images/smile.png";
 import useScrollFadeIn from "../../hooks/useScrollFadeIn";
+import {
+  SkillsWrap,
+  SkillsContent,
+  SkillsTitle,
+  SkillsCard,
+  SkillCardTitle,
+  SkillsCardBody,
+} from "./StyledSkill";
 
 interface SkillType {
   title: string;
   content: string[];
 }
-
-const SkillsWrap = styled.div`
-  width: 80%;
-  margin: 100px auto;
-`;
-
-const SkillsContent = styled.div`
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 30px;
-`;
-
-const SkillsTitle = styled.div`
-  font-size: 4rem;
-  font-family: "Barbra";
-  color: ${(props) => props.theme?.colors.pointColor};
-  position: relative;
-
-  div {
-    position: absolute;
-    z-index: 1;
-  }
-
-  img {
-    height: 200px;
-    width: 200px;
-    position: absolute;
-    right: 20%;
-    top: 10%;
-    right: 20%;
-    top: 10%;
-    transform: rotate(-45deg);
-  }
-`;
-
-const SkillsCard = styled.div`
-  width: 100%;
-  padding: 20px;
-  border: 1px solid ${(props) => props.theme?.colors.fontColor};
-  border-radius: 15px;
-`;
-
-const SkillCardTitle = styled.div`
-  font-size: 20px;
-  padding-bottom: 10px;
-  font-weight: 600;
-`;
-
-const SkillsCardBody = styled.div`
-  display: flex;
-  height: 150px;
-  flex-wrap: wrap;
-  flex-direction: column;
-  p {
-    padding: 10px 0;
-  }
-`;
 
 const Skills = () => {
   const skills: SkillType[] = useSkills();
