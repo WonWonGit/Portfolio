@@ -13,17 +13,20 @@ import {
   ProfileStar,
 } from "./StyledIntro";
 import { useIntro } from "../../hooks/useMetaIntro";
+import useScrollFadeIn from "../../hooks/useScrollFadeIn";
 
 const Intro = () => {
   const data = useIntro();
+  const fadeAnimationLeftToRight = useScrollFadeIn("right", 2, 0);
+  const fadeAnimationRightToLeft = useScrollFadeIn("left", 2, 0.5);
 
   return (
     <IntroWrap>
-      <IntroLeft>
+      <IntroLeft {...fadeAnimationLeftToRight}>
         <IntroTitle>Hello</IntroTitle>
         <IntroContent>{data}</IntroContent>
       </IntroLeft>
-      <IntroRight>
+      <IntroRight {...fadeAnimationRightToLeft}>
         <div>
           <ProfileStar top={"-60px"} right={"0px"} src={Star}></ProfileStar>
           <ProfileStar top={"-31px"} right={"-20px"} src={Star}></ProfileStar>
