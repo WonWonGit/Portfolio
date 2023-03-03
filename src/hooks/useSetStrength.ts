@@ -10,7 +10,13 @@ const useSetStrength = (name: string, setTest: (value: string) => void) => {
       if (entry.isIntersecting && current) {
         setTest(name);
         setStrength(name);
-        console.log(strength, "!!!");
+        current.style.transitionProperty = "opacity transform";
+        current.style.transitionDuration = `${2}s`;
+        current.style.transitionTimingFunction = "cubic-bezier(0, 0, 0.2, 1)";
+        // current.style.transitionTimingFunction = "ease-in-out";
+        current.style.transitionDelay = `${0.3}s`;
+        current.style.opacity = "1";
+        current.style.transform = "translate3d(0, 0, 0)";
       }
     },
     [name]
@@ -20,7 +26,7 @@ const useSetStrength = (name: string, setTest: (value: string) => void) => {
     let observer: IntersectionObserver;
     const { current } = dom;
     if (current) {
-      observer = new IntersectionObserver(handleScroll, { threshold: 0.5 });
+      observer = new IntersectionObserver(handleScroll, { threshold: 0.7 });
       observer.observe(current);
 
       return () => observer && observer.disconnect();
@@ -30,6 +36,9 @@ const useSetStrength = (name: string, setTest: (value: string) => void) => {
   return {
     ref: dom,
     state: strength,
+    style: {
+      opacity: 0,
+    },
   };
 };
 
