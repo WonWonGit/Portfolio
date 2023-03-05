@@ -47,7 +47,35 @@ const config: GatsbyConfig = {
         ],
       },
     ],
-    test: "/images/spark.png",
+    skills: [
+      {
+        title: "Backend",
+        content: ["Java", "Spring boot", "JUnit"],
+      },
+      {
+        title: "Frontend",
+        content: [
+          "ReactJS",
+          "NextJS",
+          "GatsbyJS",
+          "Javascript",
+          "HTML/CSS",
+          "css-in-js",
+        ],
+      },
+      {
+        title: "Others",
+        content: [
+          "MySQL",
+          "Redis",
+          "Github",
+          "StoryBook",
+          "Recoil",
+          "React-query",
+          "Redux-toolkit",
+        ],
+      },
+    ],
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
