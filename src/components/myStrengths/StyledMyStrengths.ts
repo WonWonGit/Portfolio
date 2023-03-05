@@ -138,8 +138,8 @@ export const AboutMeRoundWrap = styled.div`
 `;
 
 export const AboutMeStrenth = styled.div`
-  height: 300px;
-  margin-bottom: 50px;
+  height: 500px;
+  /* margin-bottom: 50px; */
   width: 50%;
 
   &.fadeOut {
@@ -150,7 +150,7 @@ export const AboutMeStrenth = styled.div`
   &.fadeIn {
     opacity: 1;
     transition: cubic-bezier(0, 0, 0.2, 1);
-    transition-delay: 0.2s;
+    transition-delay: 0.1s;
     transition-duration: 1s;
     transform: translate3d(0, 0, 0);
   }
