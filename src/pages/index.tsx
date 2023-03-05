@@ -8,7 +8,9 @@ import Project from "../components/project/Project";
 import Skill from "../components/skill/Skill";
 import AboutMe from "../components/aboutMe/AboutMe";
 import Banner from "../components/banner/Banner";
-import AboutMeRound from "../components/aboutMe/aboutMeRound/AboutMeRound";
+import Skills from "../components/skills/Skills";
+import MyStrengths from "../components/myStrengths/MyStrengths";
+import ProjectList from "../components/projectList/ProjectList";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -17,10 +19,12 @@ const IndexPage: React.FC<PageProps> = () => {
       <Layout>
         <Banner />
         <Intro />
-        <Skill />
-        <AboutMe />
-        <Project />
-        <AboutMeRound></AboutMeRound>
+        {/* <Skill /> */}
+        <Skills />
+        {/* <AboutMe /> */}
+        {/* <Project /> */}
+        <MyStrengths />
+        <ProjectList />
       </Layout>
     </>
   );

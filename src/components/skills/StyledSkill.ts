@@ -41,6 +41,7 @@ export const SkillsCard = styled.div`
   padding: 20px;
   border: 1px solid ${(props) => props.theme?.colors.fontColor};
   border-radius: 15px;
+  color: ${(props) => props.theme?.colors.fontColor};
 `;
 
 export const SkillCardTitle = styled.div`
