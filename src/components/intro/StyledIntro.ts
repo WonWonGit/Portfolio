@@ -1,3 +1,4 @@
+import { RefObject } from "react";
 import styled from "styled-components";
 import { Fade } from "../StyledCommon";
 
@@ -30,7 +31,7 @@ export const IntroTitle = styled.div`
 
 export const IntroLeft = styled.div`
   flex: 1;
-  animation: ${Fade} 4s forwards;
+  /* animation: ${Fade} 4s forwards; */
 `;
 
 export const IntroRight = styled.div`
@@ -39,7 +40,7 @@ export const IntroRight = styled.div`
   display: flex;
   padding-right: 30px;
 
-  animation: ${Fade} 5s forwards;
+  /* animation: ${Fade} 5s forwards; */
 
   div {
     width: 300px;

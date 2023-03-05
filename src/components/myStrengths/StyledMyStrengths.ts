@@ -127,9 +127,18 @@ export const AboutMeRoundWrap = styled.div`
   transition: 0.5s;
   top: 100px;
 
+  ${(props) => props.theme?.device.tablet} {
+    width: 700px;
+  }
+
   &.left {
+    /* margin: 0; */
     transition: 0.5s;
     transform: scale(0.6) translateX(65%);
+
+    ${(props) => props.theme?.device.tablet} {
+      transform: scale(0.4) translateX(38%);
+    }
   }
   &.small {
     transition: 0.5s;
@@ -142,9 +151,13 @@ export const AboutMeStrenth = styled.div`
   /* margin-bottom: 50px; */
   width: 50%;
 
+  ${(props) => props.theme?.device.tablet} {
+    width: 40%;
+  }
+
   &.fadeOut {
     opacity: 0;
-    transition-delay: 0.4s;
+    transition-delay: 0.2s;
   }
 
   &.fadeIn {

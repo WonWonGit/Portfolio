@@ -6,4 +6,6 @@ export const StyledLayout = styled.main`
   width: 100%;
   background: ${(props) => props.theme.colors?.background};
   height: auto;
+  /* position: relative; */
+  /* overflow: auto; */
 `;
