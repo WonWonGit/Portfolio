@@ -126,9 +126,11 @@ export const AboutMeRoundWrap = styled.div`
   position: sticky;
   transition: 0.5s;
   top: 100px;
+  /* transform: translateY(-50%); */
 
   ${(props) => props.theme?.device.tablet} {
-    width: 700px;
+    transform: scale(0.7);
+    top: 150px;
   }
 
   &.left {
