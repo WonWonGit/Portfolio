@@ -11,6 +11,10 @@ export const SkillsContent = styled.div`
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 30px;
+
+  ${(props) => props.theme?.device.mobile} {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 export const SkillsTitle = styled.div`
@@ -42,6 +46,10 @@ export const SkillsCard = styled.div`
   border: 1px solid ${(props) => props.theme?.colors.fontColor};
   border-radius: 15px;
   color: ${(props) => props.theme?.colors.fontColor};
+
+  ${(props) => props.theme?.device.mobile} {
+    height: 350px;
+  }
 `;
 
 export const SkillCardTitle = styled.div`
@@ -57,5 +65,9 @@ export const SkillsCardBody = styled.div`
   flex-direction: column;
   p {
     padding: 10px 0;
+  }
+
+  ${(props) => props.theme?.device.mobile} {
+    flex-wrap: nowrap;
   }
 `;

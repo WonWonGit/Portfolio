@@ -9,6 +9,21 @@ export const Rotate = keyframes`
   }
 `;
 
+export const RoundWrap = styled.div`
+  position: sticky;
+  top: 100px;
+
+  ${(props) => props.theme?.device.tablet} {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    position: sticky;
+    z-index: 999;
+    top: 0%;
+    background-color: ${(props) => props.theme?.colors.background};
+  }
+`;
+
 export const TextRotate = keyframes`
 from {
     transform: rotate(-0deg);
@@ -77,11 +92,17 @@ export const AboutMeRoundOutside = styled.div`
       transform: translate(40%, 0px);
     }
   }
+
+  ${(props) => props.theme?.device.tablet} {
+    width: 400px;
+    height: 400px;
+  }
 `;
 
 export const AboutMeRoundInside = styled.div`
   width: 300px;
   background: ${(props) => props.theme.colors?.fontColor};
+
   height: 300px;
   border-radius: 50%;
   font-family: "Barbra";
@@ -95,20 +116,30 @@ export const AboutMeRoundInside = styled.div`
   font-size: 3rem;
   color: ${(props) => props.theme?.colors.background};
   text-align: center;
+
+  ${(props) => props.theme?.device.tablet} {
+    top: -50px;
+    width: 250px;
+    height: 250px;
+    font-size: 2rem;
+  }
+
+  ${(props) => props.theme?.device.mobile} {
+    width: 200px;
+    height: 200px;
+    transform: translate(-50%, 70%);
+  }
 `;
 
 export const AboutMeWrap = styled.div`
   width: 100%;
   margin: 200px auto;
-`;
 
-export const flex = keyframes`
-    0%{
-        flex-direction: column;
-    }
-    100%{
-        flex-direction: row-reverse;
-    }
+  ${(props) => props.theme?.device.tablet} {
+    position: relative;
+    height: 500vh;
+    margin-bottom: 500px;
+  }
 `;
 
 export const AboutMeContentWrap = styled.div`
@@ -126,40 +157,67 @@ export const AboutMeRoundWrap = styled.div`
   position: sticky;
   transition: 0.5s;
   top: 100px;
-  /* transform: translateY(-50%); */
 
   ${(props) => props.theme?.device.tablet} {
-    transform: scale(0.7);
-    top: 150px;
+    transform: scale(0.8);
+    margin: 0;
+    height: 0;
+    top: 20%;
+  }
+
+  ${(props) => props.theme?.device.mobile} {
+    transform: scale(0.4);
   }
 
   &.left {
     /* margin: 0; */
     transition: 0.5s;
-    transform: scale(0.6) translateX(65%);
+    transform: scale(0.5) translateX(60%);
 
     ${(props) => props.theme?.device.tablet} {
-      transform: scale(0.4) translateX(38%);
+      transform: scale(0.5);
+      margin: 0;
+    }
+
+    ${(props) => props.theme?.device.mobile} {
+      transform: scale(0.5);
+      margin: 0;
     }
   }
   &.small {
     transition: 0.5s;
-    transform: scale(0.6);
+    transform: scale(0.6) translateX(60%);
+    ${(props) => props.theme?.device.tablet} {
+      transform: scale(0.4) translateX(-50%) translateY(150%);
+    }
+    ${(props) => props.theme?.device.mobile} {
+      transform: scale(0.4) translateX(-50%) translateY(150%);
+    }
   }
 `;
 
 export const AboutMeStrenth = styled.div`
   height: 500px;
-  /* margin-bottom: 50px; */
-  width: 50%;
+  width: 45%;
 
   ${(props) => props.theme?.device.tablet} {
-    width: 40%;
+    width: 100%;
+    margin-bottom: 200px;
+    padding: 20px;
+  }
+
+  ${(props) => props.theme?.device.mobile} {
+    padding: 20px;
   }
 
   &.fadeOut {
     opacity: 0;
     transition-delay: 0.2s;
+    transition-duration: 1s;
+
+    ${(props) => props.theme?.device.mobile} {
+      opacity: 1;
+    }
   }
 
   &.fadeIn {
@@ -168,23 +226,44 @@ export const AboutMeStrenth = styled.div`
     transition-delay: 0.1s;
     transition-duration: 1s;
     transform: translate3d(0, 0, 0);
+
+    ${(props) => props.theme?.device.mobile} {
+      transition-delay: 0.1s;
+    }
   }
 `;
 
 export const AboutMeStrengWrap = styled.div`
-  transform: translateY(-20%);
-  padding: 100px;
+  padding: 200px;
+  transform: translateY(-30%);
+
+  ${(props) => props.theme?.device.tablet} {
+    padding: 120px;
+    transform: translateY(10%);
+  }
+
+  ${(props) => props.theme?.device.mobile} {
+    padding: 10px;
+  }
 `;
 
 export const AboutMeEnd = styled.div`
   width: 100%;
   height: 200px;
   margin-top: 500px;
+
+  ${(props) => props.theme?.device.mobile} {
+    margin-top: 0px;
+  }
 `;
 
 export const AboutMeStart = styled.div`
   width: 100%;
   height: 500px;
+
+  ${(props) => props.theme?.device.mobile} {
+    height: 200px;
+  }
 `;
 
 export const StrengthTitle = styled.div`
@@ -192,6 +271,10 @@ export const StrengthTitle = styled.div`
   color: ${(props) => props.theme?.colors.pointColor};
   font-size: 3rem;
   padding-bottom: 20px;
+
+  ${(props) => props.theme?.device.tablet} {
+    font-size: 2rem;
+  }
 `;
 
 export const StrengthContent = styled.div`

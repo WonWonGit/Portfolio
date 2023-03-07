@@ -7,8 +7,11 @@ export const useAboutMe = () => {
         site {
           siteMetadata {
             keyPoint {
+              content {
+                en
+                jp
+              }
               backgroudColor
-              content
               title
               titleColor
             }

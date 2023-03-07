@@ -6,7 +6,10 @@ export const useIntro = () => {
       query HelloQuery {
         site {
           siteMetadata {
-            hello
+            hello {
+              en
+              jp
+            }
           }
         }
       }
