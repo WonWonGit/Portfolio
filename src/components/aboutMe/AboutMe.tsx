@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useRef, useState } from "react";
 import { useAboutMe } from "../../hooks/useMetaAboutMe";
 import SubBanner from "../subBanner/SubBanner";

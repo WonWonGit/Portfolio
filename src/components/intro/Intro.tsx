@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import React from "react";
+import React, { useEffect } from "react";
 import MyImg from "../../images/subject.png";
 import Star from "../../images/star.png";
 
@@ -15,16 +15,27 @@ import {
 import { useIntro } from "../../hooks/useMetaIntro";
 import useScrollFadeIn from "../../hooks/useScrollFadeIn";
 
-const Intro = () => {
-  const data = useIntro();
+interface PropsType {
+  lan: string;
+}
+
+interface IntroType {
+  jp: string;
+  en: string;
+}
+
+const Intro = ({ lan }: PropsType) => {
+  const data: IntroType = useIntro();
   const fadeAnimationLeftToRight = useScrollFadeIn("right", 2, 0);
   const fadeAnimationRightToLeft = useScrollFadeIn("left", 2, 0.5);
+
+  useEffect(() => {}, [lan]);
 
   return (
     <IntroWrap>
       <IntroLeft {...fadeAnimationLeftToRight}>
         <IntroTitle>Hello</IntroTitle>
-        <IntroContent>{data}</IntroContent>
+        <IntroContent>{lan === "en" ? data.en : data.jp}</IntroContent>
       </IntroLeft>
       <IntroRight {...fadeAnimationRightToLeft}>
         <div>
