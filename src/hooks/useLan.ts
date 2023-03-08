@@ -1,11 +1,15 @@
 import { useCallback, useEffect, useState } from "react";
 
-const useLan = () => {
-  const localSettingLan = localStorage.getItem("lan");
-  let initLan = "en";
+const isBrowser = typeof window !== "undefined";
 
-  if (localSettingLan) {
-    initLan = localSettingLan;
+const useLan = () => {
+  let initLan = "en";
+  if (isBrowser) {
+    const localSettingLan = window.localStorage.getItem("lan");
+
+    if (localSettingLan) {
+      initLan = localSettingLan;
+    }
   }
 
   const [lan, setLan] = useState(initLan);

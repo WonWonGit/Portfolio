@@ -13,6 +13,23 @@ import MyStrengths from "../components/myStrengths/MyStrengths";
 import ProjectList from "../components/projectList/ProjectList";
 import useLan from "../hooks/useLan";
 import { useEffect, useState } from "react";
+import styled from "styled-components";
+
+const LanguageBtn = styled.div`
+  height: 50px;
+  width: 50px;
+  background: ${(props) => props.theme?.colors.fontColor};
+  color: ${(props) => props.theme?.colors.background};
+  position: fixed;
+  bottom: 20;
+  padding: 10px;
+  bottom: 20px;
+  left: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 const IndexPage: React.FC<PageProps> = () => {
   const [toggleLanguage, state] = useLan();
@@ -34,7 +51,9 @@ const IndexPage: React.FC<PageProps> = () => {
         {/* <Project /> */}
         <MyStrengths lan={lan as string} />
         <ProjectList lan={lan as string} />
-        <button onClick={toggleLanguage as () => void}>en</button>
+        <LanguageBtn onClick={toggleLanguage as () => void}>
+          {lan === "en" ? "en" : "jp"}
+        </LanguageBtn>
       </Layout>
     </>
   );
