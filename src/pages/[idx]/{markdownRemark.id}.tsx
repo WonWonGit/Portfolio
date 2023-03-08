@@ -54,7 +54,7 @@ const ProjcetPage = ({ data }: any) => {
         <SubBanner title={frontmatter.title} page="project" />
         <ProjectContetWrap>{renderAst(htmlAst)}</ProjectContetWrap>
         <BackBtn>
-          <Link to="/">&larr;</Link>
+          <Link to="/#projectList">&larr;</Link>
         </BackBtn>
       </Layout>
     </>

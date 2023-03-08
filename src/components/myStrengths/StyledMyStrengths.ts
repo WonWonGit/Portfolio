@@ -166,7 +166,7 @@ export const AboutMeRoundWrap = styled.div`
   }
 
   ${(props) => props.theme?.device.mobile} {
-    transform: scale(0.4);
+    transform: scale(0.5);
   }
 
   &.left {

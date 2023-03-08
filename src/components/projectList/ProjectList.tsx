@@ -21,12 +21,17 @@ interface FrontMatterType {
 
 interface NodesType {
   frontmatter: FrontMatterType;
+  id: string;
 }
 
-const ProjectList = () => {
+interface PropsType {
+  lan: string;
+}
+
+const ProjectList = ({ lan }: PropsType) => {
   const [page, setPage] = useState(1);
   const [projcetData, setProjectData] = useState<NodesType[]>([]);
-  const datas: NodesType[] = userProjectList();
+  const datas: NodesType[] = userProjectList(lan);
   const limit = 3;
   const firstPage = 1;
   const lastPage = Math.ceil(datas.length / limit);
@@ -41,10 +46,10 @@ const ProjectList = () => {
   useEffect(() => {
     console.log(datas);
     pagination();
-  }, [page]);
+  }, [page, lan]);
 
   return (
-    <ProjectWrap>
+    <ProjectWrap id="projectList">
       <ProjectBackground>
         {[1, 2].map((index: number) => (
           <p>
@@ -69,9 +74,7 @@ const ProjectList = () => {
                 <ProjectListTitle>{data.frontmatter?.title}</ProjectListTitle>
                 <CardSummary>{data.frontmatter.summary}</CardSummary>
                 <LeanMore>
-                  <Link to={`/projcet/${data.frontmatter.idx}`}>
-                    Learn More
-                  </Link>
+                  <Link to={`/projcet/${data.id}`}>Learn More</Link>
                 </LeanMore>
               </ProjectListCard>
             ))

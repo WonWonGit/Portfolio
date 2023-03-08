@@ -11,20 +11,30 @@ import Banner from "../components/banner/Banner";
 import Skills from "../components/skills/Skills";
 import MyStrengths from "../components/myStrengths/MyStrengths";
 import ProjectList from "../components/projectList/ProjectList";
+import useLan from "../hooks/useLan";
+import { useEffect, useState } from "react";
 
 const IndexPage: React.FC<PageProps> = () => {
+  const [toggleLanguage, state] = useLan();
+  const [lan, setLan] = useState<string>("");
+
+  useEffect(() => {
+    setLan(state as string);
+  }, [state]);
+
   return (
     <>
       <Header></Header>
       <Layout>
         <Banner />
-        <Intro />
+        <Intro lan={lan as string} />
         {/* <Skill /> */}
         <Skills />
         {/* <AboutMe /> */}
         {/* <Project /> */}
-        <MyStrengths />
-        <ProjectList />
+        <MyStrengths lan={lan as string} />
+        <ProjectList lan={lan as string} />
+        <button onClick={toggleLanguage as () => void}>en</button>
       </Layout>
     </>
   );

@@ -11,7 +11,6 @@ export const StyledBanner = styled.div`
 
 export const StyledBannerImg = styled.div`
   width: 250px;
-  background: aqua;
   border-radius: 50%;
   height: 60%;
   position: absolute;

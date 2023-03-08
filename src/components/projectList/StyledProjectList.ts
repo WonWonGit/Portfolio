@@ -44,6 +44,11 @@ export const ProjectListContainer = styled.div`
   align-items: center;
   transform: translateY(-50%);
   height: 50%;
+
+  ${(props) => props.theme?.device.tablet} {
+    height: 80%;
+    transform: translateY(-45%);
+  }
 `;
 
 export const ProjectListCard = styled.div`
@@ -60,6 +65,10 @@ export const ProjectListCard = styled.div`
     color: #f5f5f5;
     transition: 0.6s;
   }
+
+  ${(props) => props.theme?.device.tablet} {
+    height: 30%;
+  }
 `;
 
 export const ProjectListView = styled.div`
@@ -74,23 +83,54 @@ export const ProjectListView = styled.div`
   ${ProjectListCard}:nth-child(2) {
     border-left: 0px;
     border-right: 0px;
+
+    ${(props) => props.theme?.device.tablet} {
+      border-top: 0px;
+      border-bottom: 0px;
+      border-left: 1px solid;
+      border-right: 1px solid;
+    }
+  }
+
+  ${ProjectListCard}:last-child {
+    border: 1px solid;
+  }
+
+  ${(props) => props.theme?.device.tablet} {
+    height: 90%;
+    flex-wrap: wrap;
+    align-content: center;
   }
 `;
 
 export const LeanMore = styled.div`
   text-align: end;
   cursor: pointer;
+
+  ${(props) => props.theme?.device.mobile} {
+    font-size: 12px;
+  }
 `;
 
 export const CardSummary = styled.div`
   flex: 1;
   padding-top: 50px;
   line-height: 20px;
+
+  ${(props) => props.theme?.device.mobile} {
+    font-size: 12px;
+    padding: 0;
+  }
 `;
 
 export const ProjectListTitle = styled.div`
   font-size: 1.5rem;
   font-weight: 600;
+
+  ${(props) => props.theme?.device.mobile} {
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
 `;
 
 export const ProjectArrow = styled.div`
