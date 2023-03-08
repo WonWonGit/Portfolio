@@ -13,7 +13,7 @@ export const ProjectBackground = styled.div`
   position: relative;
   overflow: hidden;
   font-family: "Barbra";
-  color: ${(props) => props.theme?.colors.pointColor};
+  color: ${(props) => props.theme.colors?.pointColor};
 
   p {
     position: absolute;
@@ -45,7 +45,7 @@ export const ProjectListContainer = styled.div`
   transform: translateY(-50%);
   height: 50%;
 
-  ${(props) => props.theme?.device.tablet} {
+  ${(props) => props.theme.device?.tablet} {
     height: 80%;
     transform: translateY(-45%);
   }
@@ -66,7 +66,7 @@ export const ProjectListCard = styled.div`
     transition: 0.6s;
   }
 
-  ${(props) => props.theme?.device.tablet} {
+  ${(props) => props.theme.device?.tablet} {
     height: 30%;
   }
 `;
@@ -84,7 +84,7 @@ export const ProjectListView = styled.div`
     border-left: 0px;
     border-right: 0px;
 
-    ${(props) => props.theme?.device.tablet} {
+    ${(props) => props.theme.device?.tablet} {
       border-top: 0px;
       border-bottom: 0px;
       border-left: 1px solid;
@@ -96,7 +96,7 @@ export const ProjectListView = styled.div`
     border: 1px solid;
   }
 
-  ${(props) => props.theme?.device.tablet} {
+  ${(props) => props.theme.device?.tablet} {
     height: 90%;
     flex-wrap: wrap;
     align-content: center;
@@ -107,7 +107,7 @@ export const LeanMore = styled.div`
   text-align: end;
   cursor: pointer;
 
-  ${(props) => props.theme?.device.mobile} {
+  ${(props) => props.theme.device?.mobile} {
     font-size: 12px;
   }
 `;
@@ -117,7 +117,7 @@ export const CardSummary = styled.div`
   padding-top: 50px;
   line-height: 20px;
 
-  ${(props) => props.theme?.device.mobile} {
+  ${(props) => props.theme.device?.mobile} {
     font-size: 12px;
     padding: 0;
   }
@@ -127,7 +127,7 @@ export const ProjectListTitle = styled.div`
   font-size: 1.5rem;
   font-weight: 600;
 
-  ${(props) => props.theme?.device.mobile} {
+  ${(props) => props.theme.device?.mobile} {
     font-size: 15px;
     padding-bottom: 10px;
   }

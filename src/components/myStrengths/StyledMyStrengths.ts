@@ -13,14 +13,14 @@ export const RoundWrap = styled.div`
   position: sticky;
   top: 100px;
 
-  ${(props) => props.theme?.device.tablet} {
+  ${(props) => props.theme.device?.tablet} {
     width: 100%;
     height: 50vh;
     display: flex;
     position: sticky;
     z-index: 999;
     top: 0%;
-    background-color: ${(props) => props.theme?.colors.background};
+    background-color: ${(props) => props.theme.colors?.background};
   }
 `;
 
@@ -93,7 +93,7 @@ export const AboutMeRoundOutside = styled.div`
     }
   }
 
-  ${(props) => props.theme?.device.tablet} {
+  ${(props) => props.theme.device?.tablet} {
     width: 400px;
     height: 400px;
   }
@@ -114,17 +114,17 @@ export const AboutMeRoundInside = styled.div`
   justify-content: center;
   align-items: center;
   font-size: 3rem;
-  color: ${(props) => props.theme?.colors.background};
+  color: ${(props) => props.theme.colors?.background};
   text-align: center;
 
-  ${(props) => props.theme?.device.tablet} {
+  ${(props) => props.theme.device?.tablet} {
     top: -50px;
     width: 250px;
     height: 250px;
     font-size: 2rem;
   }
 
-  ${(props) => props.theme?.device.mobile} {
+  ${(props) => props.theme.device?.mobile} {
     width: 200px;
     height: 200px;
     transform: translate(-50%, 70%);
@@ -135,7 +135,7 @@ export const AboutMeWrap = styled.div`
   width: 100%;
   margin: 200px auto;
 
-  ${(props) => props.theme?.device.tablet} {
+  ${(props) => props.theme.device?.tablet} {
     position: relative;
     height: 500vh;
     margin-bottom: 500px;
@@ -158,14 +158,14 @@ export const AboutMeRoundWrap = styled.div`
   transition: 0.5s;
   top: 100px;
 
-  ${(props) => props.theme?.device.tablet} {
+  ${(props) => props.theme.device?.tablet} {
     transform: scale(0.8);
     margin: 0;
     height: 0;
     top: 20%;
   }
 
-  ${(props) => props.theme?.device.mobile} {
+  ${(props) => props.theme.device?.mobile} {
     transform: scale(0.5);
   }
 
@@ -174,12 +174,12 @@ export const AboutMeRoundWrap = styled.div`
     transition: 0.5s;
     transform: scale(0.5) translateX(60%);
 
-    ${(props) => props.theme?.device.tablet} {
+    ${(props) => props.theme.device?.tablet} {
       transform: scale(0.5);
       margin: 0;
     }
 
-    ${(props) => props.theme?.device.mobile} {
+    ${(props) => props.theme.device?.mobile} {
       transform: scale(0.5);
       margin: 0;
     }
@@ -187,10 +187,10 @@ export const AboutMeRoundWrap = styled.div`
   &.small {
     transition: 0.5s;
     transform: scale(0.6) translateX(60%);
-    ${(props) => props.theme?.device.tablet} {
+    ${(props) => props.theme.device?.tablet} {
       transform: scale(0.4) translateX(-50%) translateY(150%);
     }
-    ${(props) => props.theme?.device.mobile} {
+    ${(props) => props.theme.device?.mobile} {
       transform: scale(0.4) translateX(-50%) translateY(150%);
     }
   }
@@ -200,13 +200,13 @@ export const AboutMeStrenth = styled.div`
   height: 500px;
   width: 45%;
 
-  ${(props) => props.theme?.device.tablet} {
+  ${(props) => props.theme.device?.tablet} {
     width: 100%;
     margin-bottom: 200px;
     padding: 20px;
   }
 
-  ${(props) => props.theme?.device.mobile} {
+  ${(props) => props.theme.device?.mobile} {
     padding: 20px;
   }
 
@@ -215,7 +215,7 @@ export const AboutMeStrenth = styled.div`
     transition-delay: 0.2s;
     transition-duration: 1s;
 
-    ${(props) => props.theme?.device.mobile} {
+    ${(props) => props.theme.device?.mobile} {
       opacity: 1;
     }
   }
@@ -227,7 +227,7 @@ export const AboutMeStrenth = styled.div`
     transition-duration: 1s;
     transform: translate3d(0, 0, 0);
 
-    ${(props) => props.theme?.device.mobile} {
+    ${(props) => props.theme.device?.mobile} {
       transition-delay: 0.1s;
     }
   }
@@ -237,12 +237,12 @@ export const AboutMeStrengWrap = styled.div`
   padding: 200px;
   transform: translateY(-30%);
 
-  ${(props) => props.theme?.device.tablet} {
+  ${(props) => props.theme.device?.tablet} {
     padding: 120px;
     transform: translateY(10%);
   }
 
-  ${(props) => props.theme?.device.mobile} {
+  ${(props) => props.theme.device?.mobile} {
     padding: 10px;
   }
 `;
@@ -252,7 +252,7 @@ export const AboutMeEnd = styled.div`
   height: 200px;
   margin-top: 500px;
 
-  ${(props) => props.theme?.device.mobile} {
+  ${(props) => props.theme.device?.mobile} {
     margin-top: 0px;
   }
 `;
@@ -261,23 +261,23 @@ export const AboutMeStart = styled.div`
   width: 100%;
   height: 500px;
 
-  ${(props) => props.theme?.device.mobile} {
+  ${(props) => props.theme.device?.mobile} {
     height: 200px;
   }
 `;
 
 export const StrengthTitle = styled.div`
   font-family: "Barbra";
-  color: ${(props) => props.theme?.colors.pointColor};
+  color: ${(props) => props.theme.colors?.pointColor};
   font-size: 3rem;
   padding-bottom: 20px;
 
-  ${(props) => props.theme?.device.tablet} {
+  ${(props) => props.theme.device?.tablet} {
     font-size: 2rem;
   }
 `;
 
 export const StrengthContent = styled.div`
   line-height: 30px;
-  color: ${(props) => props.theme?.colors.fontColor};
+  color: ${(props) => props.theme.colors?.fontColor};
 `;

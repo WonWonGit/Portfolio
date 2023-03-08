@@ -18,8 +18,8 @@ import styled from "styled-components";
 const LanguageBtn = styled.div`
   height: 50px;
   width: 50px;
-  background: ${(props) => props.theme?.colors.fontColor};
-  color: ${(props) => props.theme?.colors.background};
+  background: ${(props) => props.theme.colors?.fontColor};
+  color: ${(props) => props.theme.colors?.background};
   position: fixed;
   bottom: 20;
   padding: 10px;

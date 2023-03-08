@@ -12,7 +12,7 @@ export const SkillsContent = styled.div`
   grid-template-rows: repeat(2, 1fr);
   gap: 30px;
 
-  ${(props) => props.theme?.device.mobile} {
+  ${(props) => props.theme.device?.mobile} {
     grid-template-columns: repeat(1, 1fr);
   }
 `;
@@ -20,7 +20,7 @@ export const SkillsContent = styled.div`
 export const SkillsTitle = styled.div`
   font-size: 4rem;
   font-family: "Barbra";
-  color: ${(props) => props.theme?.colors.pointColor};
+  color: ${(props) => props.theme.colors?.pointColor};
   position: relative;
 
   div {
@@ -43,11 +43,11 @@ export const SkillsTitle = styled.div`
 export const SkillsCard = styled.div`
   width: 100%;
   padding: 20px;
-  border: 1px solid ${(props) => props.theme?.colors.fontColor};
+  border: 1px solid ${(props) => props.theme.colors?.fontColor};
   border-radius: 15px;
-  color: ${(props) => props.theme?.colors.fontColor};
+  color: ${(props) => props.theme.colors?.fontColor};
 
-  ${(props) => props.theme?.device.mobile} {
+  ${(props) => props.theme.device?.mobile} {
     height: 350px;
   }
 `;
@@ -67,7 +67,7 @@ export const SkillsCardBody = styled.div`
     padding: 10px 0;
   }
 
-  ${(props) => props.theme?.device.mobile} {
+  ${(props) => props.theme.device?.mobile} {
     flex-wrap: nowrap;
   }
 `;
